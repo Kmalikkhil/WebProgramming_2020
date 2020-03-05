@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+}
+
+.header {
+    background-color: green;
+    font-weight: bolder;
+    font-family: 'Spartan', sans-serif;
+    text-align:center ;
+    padding: 200px;
+}
+
+.header h1 {
+    margin:0;
+
+}
+
+.h2 {
+    style="font-size:60px;"
+
+}
+
+.h3 {
+    background-color: green;
+    font-weight: bolder;
+    font-family: 'Spartan', sans-serif;
+    text-align:center ;
+    padding: 2px;
+}
+
+.Br {
+    font-style: italic;
+}
+
+.h4 {
+    background-color: grey;
+    font-weight: bolder;
+    font-family: 'Spartan', sans-serif;
+    text-align:center ;
+    padding: 10px;
+}
