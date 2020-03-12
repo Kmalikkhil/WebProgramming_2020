@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(146, 187, 84);
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    width: 340px;
+    height: 220px;
+    margin: 15% auto 15%;
+    padding: 40px 10px 20px 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.form .message {
+    margin: 5% 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: rgb(88, 184, 91);
+    text-decoration: none;
+  }
+
+  .form input {
+    background: rgb(240, 240, 240);
+    width: 75%;
+    height: 20%;
+    margin: 0 0 15px;
+    padding: 0 0 0 20px ;
+    border: none;
+
+  } 
+  .form button {
+      background: rgb(67, 170, 67);
+      width: 80%;
+      height: 20%;
+      border: none;
+      color: white;
+      font-size: 15px;
+  }

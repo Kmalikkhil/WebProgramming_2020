@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(79, 58, 97);
+    margin: 0% 10% 10% 10%;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    padding-bottom: 50px;
+    margin: 0px;
+    text-align: center;
+}
+
+.p1 {
+  margin: 0px;
+}
+.p2 {
+color: violet;
+}
+
+.box1 {
+    border: none;
+  }
+  
+.box2 {  
+    background-color:white;
+    padding: 0px 20px 20px 20px;
+    font-size: 20px;
+    border-bottom: dotted black;
+  }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
+  .grid-item1 {
+    background-color:white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .grid-item2 {
+    background-color:rgb(104, 72, 192);
+    padding: 0;
+    font-size: 120px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 0px;
+  }
+  .grid-item3 {
+    background-color: rgb(104, 72, 192);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item4 {
+    background-color: rgb(104, 72, 192);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  .grid-item5 {
+    background-color:rgb(209, 142, 230);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .itemcolor {
+    color: white;
+    font-size: 60px;
+  }
+
+  .grid-item6 {
+    background-color:rgb(209, 142, 230);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  .grid-item7 {
+    background-color:rgb(104, 72, 192);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item8 {
+    background-color:rgb(104, 72, 192);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .footer {  
+    background-color:black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
