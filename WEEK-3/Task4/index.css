@@ -1,61 +1,78 @@
 body {
     background-color:black;
+    
 }
 
 .form {
-    background-color: rgb(9, 69, 80);
-    width: 700px;
-    height: 700px;
+    background-color: rgb(44, 53, 58);
+    width: 500px;
+    height: 550px;
     margin: 15% auto 15%;
     padding: 40px 10px 20px 10px;
     text-align: center;
+    padding: 80px 20px 20px 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 #button1{
-    width: 300px;
+    width: 240px;
     height: 50px;
-    margin: 0 auto;
-    background-color: rgb(6, 51, 77);
+    margin-right: -2px;
+    background-color: rgb(66,103,178);
     border: none;
     color: white;
-    
     }
 #button2{
-    width: 300px;
+    width: 240px;
     height: 50px;
-    margin: 0 auto;
-    background-color: cornflowerblue;
+    margin-left: -2px;
+    background-color: rgb(29,161,242);
     border: none;
     color: white;
     }
-
-.form input {
-        background: rgb(240, 240, 240);
-        width: 40%;
-        height: 5%;
-        margin: 0 0 15px;
-        padding: 0 0 0 20px ;
-        border-left: red solid;
+        
+#namebox1 {
+    background: rgb(240, 240, 240);
+    width: 43%;
+    height: 7%;
+    margin: 15px 0 15px 0;
+    padding: 0 0 0 20px ;
+    border-left: green solid;
+    
 }
 
-.emailpass-box {
+#namebox2 {
     background: rgb(240, 240, 240);
-    width: 87%;
-    height: 5%;
-    margin: 0 0 15px 45px;
+    width: 43%;
+    height: 7%;
+    margin: 15px 0 15px 0;
+    padding: 0 0 0 20px;
+}
+
+#emailpass-box {
+    background: rgb(240, 240, 240);
+    width: 92%;
+    height: 7%;
+    margin: 15px 0 15px 0;
+    padding: 0 0 0 20px;
 }
 
 .white-text{
     color: white;
     margin-top: 30px;
+    
 }
 .teal-text {
     color: teal;
 }
+.left-text {
+    text-align: left;
+    padding: 0 0 0 10px;
+}
 #button3{
-    width: 610px;
+    width: 480px;
     height: 50px;
-    margin: 0 auto;
+    margin: 15px 0 10px 0;
     font-size: 16px;
     background-color: green;
     border: none;
