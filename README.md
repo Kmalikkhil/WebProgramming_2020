@@ -1,5 +1,4 @@
 # WebProgramming_2020
-This is My File
-Kanishka
+This Repository belongs to Kanishka
+All HTML, CSS and JAVASCRIPT TASKS ARE HERE!!!!
 
-I am editing it through github site online
