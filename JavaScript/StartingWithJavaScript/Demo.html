@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="content">Random Text</div>
+    <div id="content1">Counter : 0</div>
+
+    <button id = "theButton">Hello World</button>
+    <button id = "theOtherButton">Count!</button>
+
+    <script type="text/javascript">
+    let content = document.getElementById("content");
+    let myButton = document.getElementById("theButton");
+
+    let content1 = document.getElementById("content1");
+    let myOtherButton = document.getElementById("theOtherButton");
+    
+    myButton.onclick = onMyButtonClick;
+    function onMyButtonClick() {
+        content.innerHTML = "Booo!!!"
+    }
+
+   
+    </script>
+
+</body>
+</html>
