@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>JavaScript Time!</h2>
+
+    <button id = "Button">Whats the time Javescript?</button>
+    <p id="Content"></p>
+    <script type="text/javascript">
+
+    let content = document.getElementById("Button");
+    let content2 = document.getElementById("Content");
+    
+    content.onclick = onMyButtonClick;
+    function onMyButtonClick() {
+        content2.innerHTML = Date();
+    }
+    
+    
+   
+    </script>
+    
+    
+
+</body>
+</html>
