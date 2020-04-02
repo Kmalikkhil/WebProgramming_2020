@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="Num1"/>
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+        <option value="Meh">Meh</option>
+    </select>
+    <input type="text" id="Num2"/>
+    <br>
+    <br>
+    <button onclick="calc();">Click Me Please</button>
+    <p id="finalresult">Hay Champ, your answer will display here</p>
+
+    <script>
+      
+      
+        function calc()
+        {
+            var Num1 = parseFloat(document.getElementById('Num1').value);
+            var Num2 = parseFloat(document.getElementById('Num2').value);
+            var op = document.getElementById('operators').value;
+
+            
+            if(op === '+')
+            {
+                document.getElementById("finalresult").innerHTML = Num1+Num2;
+                
+            }
+
+            if(op === '-')
+            {
+                document.getElementById("finalresult").innerHTML = Num1-Num2;
+            }
+
+            if(op === '*')
+            {
+                document.getElementById("finalresult").innerHTML = Num1*Num2;
+            }
+
+            if(op === '/')
+            {
+                document.getElementById("finalresult").innerHTML = Num1/Num2;
+            }
+
+            if(op === 'Meh')
+            {
+                document.alert = alert("Woah buddy, stop playing with me, thats not an operator");
+            }
+            
+            
+            
+            
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
