@@ -6,26 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>JavaScript Time!</h1>
 
-    <button id = "Button">Whats the time Javescript?</button>
-    <p id="Content"></p>
-    <script type="text/javascript">
-
-    let content = document.getElementById("Button");
-    let content2 = document.getElementById("Content");
     
-    content.onclick = onMyButtonClick;
-    function onMyButtonClick() {
-        content2.innerHTML = Date();
+    
+    <script>
+    var i;
+    var j=5
+
+    for(i = 0; i < 10; i++) {
+            
+        if(i == j )
+         {
+            console.log("Woah mum i counted to " + i + "!");
+            console.log("Counting up... Im at: " + i);
+          
+         }
+         else
+         {
+            console.log("Counting up... Im at: " + i);
+         }
+         
     }
-    
-    
-   
+    console.log("Look mum i can count to " + (i-1));
+
     </script>
     
-    
-
 </body>
 </html>
