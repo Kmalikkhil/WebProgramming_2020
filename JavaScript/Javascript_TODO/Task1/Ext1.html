@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class = "form">
+
+    <div class="inputs">
+        <input type="text" id="inputBox" placeholder="New Item..." autofocus>
+        <button id= "AddLine" >Add</button>
+        <button id = "Delete">Delet ALL</button>
+    </div>
+   
+    <div class="elements" id="elements">
+       
+
+    </div>
+    <div class="elements2" id="elements2">
+
+    </div>
+
+    </div>
+    
+    <script type="text/javascript">
+    let AddLine = document.getElementById("AddLine");
+    let elements = document.getElementById("elements");
+    let elements2 = document.getElementById("elements2");  
+    let DeleteAll = document.getElementById("Delete");
+
+    document.getElementById("inputBox").focus();
+   
+    AddLine.onclick = Add_Line;
+    
+
+
+    function Add_Line()
+            {
+                let inputVal = document.getElementById("inputBox").value;
+                
+                let NewElement = document.createElement("div");
+                let NewElementText = document.createTextNode(inputVal);
+                NewElement.appendChild(NewElementText);
+                elements.appendChild(NewElement);
+                document.getElementById("inputBox").value = "";
+                NewElement.style.backgroundColor = "#cccccc";
+                NewElement.style.marginBottom = "5px";
+                let NewElementButton = document.createElement("button");
+                NewElementButton.className ="InnerButton";
+                NewElementButton.innerHTML = "Delete";
+                NewElement.appendChild(NewElementButton);
+                elements2.appendChild(NewElementButton);
+        
+
+                document.getElementById("inputBox").focus();
+                
+            
+            NewElementButton.onclick = function()
+                {
+                    elements.removeChild(NewElement);
+                    elements2.removeChild(NewElementButton);
+                    document.getElementById("inputBox").focus();
+                    
+                }
+            
+            
+            NewElement.onmouseover = function()
+                 {
+                     NewElement.style.backgroundColor = "grey";
+                     NewElement.style.fontSize = "26px";
+                 }
+            NewElement.onmouseout = function()
+                 {
+                     NewElement.style.backgroundColor = "#cccccc";
+                     NewElement.style.fontSize = "25px";
+                 
+                 }
+
+            
+            }
+
+            DeleteAll.onclick = function Delete_All()
+           {
+            elements.innerHTML = " ";
+            elements2.innerHTML = " ";
+            document.getElementById("inputBox").focus();
+            
+           }
+    
+    
+    </script>
+</body>
+</html>
