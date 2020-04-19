@@ -1,6 +1,119 @@
-.body {
-    background-color: black;
+body {
+    background-color: ghostwhite;
 }
-.OutputWindow {
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+#Inputs {
+    text-align: center;
     border: solid;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px;
 }
+
+#InputBox  {
+    width: 500px;
+}
+
+#Delete {
+    background-color: red;
+    font-weight: bolder;
+}
+#TypesOfTask {
+    width: 150px;
+}
+#OutputWindow {
+    border: solid;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+#List1 {
+    float: left;
+    width: 33%;
+    height: auto;
+    border: solid;
+    overflow-wrap: break-word;
+}
+
+#List2 {
+    float: left;
+    width: 32%;
+    height: auto;
+    border: solid;
+    overflow-wrap: break-word;
+}
+
+#List3 {
+    float: left;
+    width: 33%;
+    height: auto;
+    border: solid;
+    overflow-wrap: break-word;
+}
+
+#List1 > div {
+    background-color: rgb(255, 255, 255);
+    border:solid grey;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+#List2 > div {
+    background-color: rgb(255, 255, 255);
+    border: solid grey;
+    margin: 5px;
+    padding: 5px;
+}
+
+#List3 > div {
+    background-color: rgb(255, 255, 255);
+    border: solid grey;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+#List1 > div:hover {
+    background: #ddd;
+  }
+
+#List2 > div:hover {
+    background: #ddd;
+  }
+
+#List3 > div:hover {
+    background: #ddd;
+  }
+#List1Header {
+
+    float: left;
+    width: 33%;
+    border: solid;
+  }
+
+#List2Header {
+
+    float: left;
+    width: 32%;
+    border: solid;
+  }
+#List3Header {
+
+    float: left;
+    width: 33%;
+    border: solid;
+  }
+
+.fa-trash-alt {
+    float: right;
+    color: red;
+}
+

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="ExtTask2.css">
+    <link rel="stylesheet" href="FA/css/all.min.css" >
+    
     
 
 </head>
@@ -12,25 +14,43 @@
 
 <div>
 
-    <div id="inputs">
-
+    <div id="Inputs">
+        <input type ="text" id="InputBox" placeholder="New Item..." autofocus>
+        <button id = "AddLine">Add</button>
+        
+        <br>
+        <br>
+        <select id = "TypesOfTask">
+            <option value="Grocery">Grocery</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothings">Clothings</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button id = "Delete">DELETE ALL</button><p>(Select option from the list to delete the content inside)</p>
 
 
 
     </div>
 
     <div id = "OutputWindow">
-      HI wy
-
+        <div id="List1Header"><h3>GROCERY</h3></div>
+        <div id="List2Header"><h3>ELECTRONICS</h3></div>
+        <div id="List3Header"><h3 >CLOTHINGS</h3></div>
+       
         <div id = "List1">
+        
 
         </div>
-
+    
         <div id = "List2">
+            
 
         </div>
-
+        
         <div id = "List3">
+    
 
         </div>
 
@@ -39,7 +59,6 @@
 
 </div>
 
-
-    
+<script src="ExtTask2.js"></script>
 </body>
 </html>
