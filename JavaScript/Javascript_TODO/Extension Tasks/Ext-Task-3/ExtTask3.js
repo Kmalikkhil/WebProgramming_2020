@@ -83,6 +83,8 @@ a.onclick = function()
            {
                 a.parentElement.remove();
                 ListTimer.removeChild(settimerbutton);
+                AddLine.innerText = "Add";
+                AddLine.disabled = false; 
                   
            }
 
@@ -92,7 +94,9 @@ CheckBox.addEventListener("change", function() {
 
               a.parentElement.remove();
               ListTimer.removeChild(settimerbutton);
-              happysound();     
+              happysound();
+              AddLine.innerText = "Add";
+              AddLine.disabled = false;     
                 
         }
         
@@ -103,6 +107,7 @@ settimerbutton.onclick = function() {
 // Prompt user to add the timer for the task
   let TimeInput = prompt("Please provide Countdown Timer for the task in Seconds");
   let TimeInput1 = parseInt(TimeInput);
+
 
 // enable add button to add more tasks
   AddLine.disabled = false;
