@@ -1,0 +1,96 @@
+body {
+    background-color: ghostwhite;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+#Inputs {
+    text-align: center;
+    border: solid;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#InputBox  {
+    width: 500px;
+}
+
+#Delete {
+    background-color: red;
+    font-weight: bolder;
+}
+#TypesOfTask {
+    width: 150px;
+}
+#OutputWindow {
+    border: solid;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+#List1 {
+    float: left;
+    width: 65%;
+    height: auto;
+    border: solid;
+    overflow-wrap: break-word;
+}
+
+#ListTimer {
+    float: left;
+    width: 30%;
+    height: auto;
+    border: solid;
+    overflow-wrap: break-word;
+}
+
+#List1 > div {
+    background-color: rgb(255, 255, 255);
+    border:solid grey;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+#ListTimer > button {
+    background-color: rgb(255, 255, 255);
+    border: solid grey;
+    margin: 5px 0 0 5px;
+    width: 250px;
+    height: 36px;
+}
+
+
+#List1 > div:hover {
+    background: #ddd;
+  }
+
+#ListTimer > button:hover {
+    background: #ddd;
+  }
+
+#List1Header {
+
+    float: left;
+    width: 65%;
+    border: solid;
+  }
+
+#ListTimerHeader {
+
+    float: left;
+    width: 30%;
+    border: solid;
+  }
+
+.fa-trash-alt {
+    float: right;
+    color: red;
+}
+
