@@ -14,7 +14,7 @@ body {
     height: 220px;
     border-radius: 100px;
     text-align: center;
-    margin: 0px;
+    margin: 10px;
 }
 
 #numberOfCookies {
@@ -26,6 +26,8 @@ body {
     font-size: xx-large;
     margin: 5px;
     padding: 10px;
+    width: 400px;
+    color
 }
 
 #numberOfCookiesPerSecond {
@@ -35,18 +37,24 @@ body {
     font-size: x-large;
     margin: 5px;
     padding: 10px;
+    border-top: none;
+    width: 250px;
 }
 
 #cookie {
-    width: 49%;
-    height: 500px;
+    width: 31%;
+    height: 400px;
     float: left;
     text-align: center;
+    border: solid;
+    border-radius: 50px;
 
 }
 
 #cookieImg{
     cursor: pointer;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     animation: rotation 15s infinite linear;
 }
@@ -59,13 +67,13 @@ body {
 
 
 #upgrades {
-    width: 49%;
+    width: 30%;
     height: auto;
     float: right;
     text-align: center;
     border: solid;
-    border-bottom: none;
-    border-top: none;
+    border-radius: 50px;
+    padding: 8px;
 }
 
 #upgrades > img {
@@ -75,6 +83,11 @@ body {
     border-radius: 50%;
 
 
+}
+
+#upgrades > h1 {
+    border: solid;
+    border-radius: 100px;
 }
 
 #pointerValue {
@@ -116,3 +129,22 @@ figure > img {
       transform: rotate(359deg);
     }
   }
+
+
+#logHeader {
+    width: 33%;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+#log {
+    
+    width: 33%;
+    height: 350px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    overflow-y: auto;
+}
