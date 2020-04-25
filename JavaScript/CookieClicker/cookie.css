@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(235, 223, 223);
+}
+
+#pageheader > h1 {
+
+    color: red;
+    text-align: center;
+}
+
+#scoreboard {
+    border: solid;
+    height: 200px;
+    text-align: center;
+    margin: 0px;
+}
+
+#numberOfCookies {
+    background-color: green;
+    border: solid;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 5px;
+}
+
+#numberOfCookiesPerSecond {
+    background-color:goldenrod;
+    border: solid;
+    font-size: x-large;
+    margin: 5px;
+}
+
+#cookie {
+    width: 49%;
+    border: solid;
+    height: 500px;
+    float: left;
+    text-align: center;
+
+}
+
+#cookie > img{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#cookie > img:hover{
+    size: 120px;
+}
+#upgrades {
+    width: 49%;
+    border: solid;
+    height: 500px;
+    float: right;
+    text-align: center;
+
+}
+
+#upgrades > img {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+
+#pointerValue {
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#upgradesPurchased {
+    border: solid;
+}
