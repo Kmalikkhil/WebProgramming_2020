@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(235, 223, 223);
+    background-color: rgb(23, 47, 68);
+    color: whitesmoke;
 }
 
 #pageheader > h1 {
@@ -10,29 +11,34 @@ body {
 
 #scoreboard {
     border: solid;
-    height: 200px;
+    height: 220px;
+    border-radius: 100px;
     text-align: center;
     margin: 0px;
 }
 
 #numberOfCookies {
-    background-color: green;
+    background-color:transparent;
+    opacity: 0.5;
     border: solid;
+    border-radius: 50px;
     font-weight: bolder;
     font-size: xx-large;
     margin: 5px;
+    padding: 10px;
 }
 
 #numberOfCookiesPerSecond {
-    background-color:goldenrod;
+    background-color:rgb(34, 139, 107);
     border: solid;
+    border-radius: 16px;
     font-size: x-large;
     margin: 5px;
+    padding: 10px;
 }
 
 #cookie {
     width: 49%;
-    border: solid;
     height: 500px;
     float: left;
     text-align: center;
@@ -45,14 +51,6 @@ body {
     animation: rotation 15s infinite linear;
 }
 
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
 
 #cookie > img:active{
     transform: rotate(1800deg);
@@ -62,11 +60,12 @@ body {
 
 #upgrades {
     width: 49%;
-    border: solid;
-    height: 500px;
+    height: auto;
     float: right;
     text-align: center;
-
+    border: solid;
+    border-bottom: none;
+    border-top: none;
 }
 
 #upgrades > img {
@@ -87,7 +86,10 @@ body {
 
 #upgradesPurchased {
     border: solid;
-    margin: 5px;
+    border-radius: 100px;
+    margin-top: 10px;
+
+
 }
 
 figure {
@@ -106,3 +108,11 @@ figure > img {
 
 }
 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
