@@ -9,6 +9,8 @@ let cookieCounterPerSecond = 0;
 let buyingAbility = 10;
 let resetLogButton = document.getElementById("resetLog");
 
+
+//Disables upgrade after loading the page
 pointerImg.style.pointerEvents = "none";
 // Onclick event for upgrade pointer
 pointerImg.onclick = upgradepointer;
@@ -30,7 +32,11 @@ function upgradepointer(){
             numberOfCookiesPerSecond.innerHTML = "Per Second " + cookieCounterPerSecond.toFixed(1);
             numberOfCookies.innerHTML = Math.floor(cookieCounter) + " Cookies";
 
-            if(cookieCounter >= buyingAbility)
+        // 1000 means 1 second in milliseconds
+        },1000);
+
+        //Condition to disable upgrades if not enough cookies
+        if(cookieCounter >= buyingAbility)
             {
                 pointerImg.src = "Pointer.png";
                 pointerImg.style.pointerEvents = "auto";
@@ -42,9 +48,6 @@ function upgradepointer(){
                 
             
             }
-
-        // 1000 means 1 second in milliseconds
-        },1000);
 
         // increases the price to purchase an upgrade
         buyingAbility += 10;
@@ -64,16 +67,10 @@ function upgradepointer(){
         upgradesPurchased.appendChild(newFig);
         newFig.appendChild(newImg);
         newFig.appendChild(newcaption);
-        
-        
+          
     }
-    
-    
-    
-    
+        
 }
-
-
 
 //Function for clicking on Cookie image
 cookieimg.onclick = cookieClick;
@@ -83,6 +80,7 @@ function cookieClick(){
    cookieCounter += 1; 
    numberOfCookies.innerHTML = Math.floor(cookieCounter) + " Cookies";
    
+   //Condition to disable upgrades if not enough cookies
    if(cookieCounter >= buyingAbility)
    {
        pointerImg.src = "Pointer.png";
@@ -97,6 +95,7 @@ function cookieClick(){
    
 }
 
+//Resst the log page
 resetLogButton.onclick = resetLog;
 
 function resetLog(){
@@ -104,7 +103,7 @@ function resetLog(){
     log.innerHTML = " ";
 }
 
-
+// Adds events for any click on cookie
 
 document.getElementById("cookieImg").addEventListener("click", addLog);
 
@@ -114,7 +113,7 @@ function addLog() {
     line.innerHTML = "Cookie Clicked - 1 Cookie added";
 }
 
-
+// Adds events for any click on upgrades
 document.getElementById("pointerImg").addEventListener("click", addLog2);
 
     function addLog2() {
