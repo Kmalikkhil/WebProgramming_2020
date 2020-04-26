@@ -110,7 +110,9 @@ document.getElementById("cookieImg").addEventListener("click", addLog);
 function addLog() {
     let line = document.createElement("li");
     log.appendChild(line);
-    line.innerHTML = "Cookie Clicked - 1 Cookie added";
+    var d = new Date();
+    d = d.toUTCString();
+    line.innerHTML = "Cookie Clicked - 1 Cookie added on: " + "<span style = 'color:red;'>" + d;
 }
 
 // Adds events for any click on upgrades
@@ -119,5 +121,7 @@ document.getElementById("pointerImg").addEventListener("click", addLog2);
     function addLog2() {
         let line = document.createElement("li");
         log.appendChild(line);
-        line.innerHTML = "Upgrade Purchased";
+        var d = new Date();
+        d = d.toUTCString();
+        line.innerHTML = "Upgrade Purchased on: " + "<span style = 'color:red;'>" + d ;
     }

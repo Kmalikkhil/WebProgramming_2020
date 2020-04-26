@@ -1,4 +1,5 @@
 body {
+    background-image: url("BI.jpg");
     background-color: rgb(23, 47, 68);
     color: whitesmoke;
 }
@@ -18,8 +19,7 @@ body {
 }
 
 #numberOfCookies {
-    background-color:transparent;
-    opacity: 0.5;
+    background-color:rgba(77, 25, 25, 0.4);
     border: solid;
     border-radius: 50px;
     font-weight: bolder;
@@ -27,11 +27,12 @@ body {
     margin: 5px;
     padding: 10px;
     width: 400px;
-    color
+
 }
 
 #numberOfCookiesPerSecond {
-    background-color:rgb(34, 139, 107);
+
+    background-color: rgba(34, 139, 107, 0.3);
     border: solid;
     border-radius: 16px;
     font-size: x-large;
