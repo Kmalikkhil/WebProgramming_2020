@@ -38,7 +38,7 @@ h3 {
     float: left;
     width: 65%;
     height: auto;
-    border: solid;
+  /* border: solid; */
     overflow-wrap: break-word;
 }
 
@@ -46,7 +46,7 @@ h3 {
     float: left;
     width: 30%;
     height: auto;
-    border: solid;
+   /* border: solid; */
     overflow-wrap: break-word;
 }
 
@@ -60,7 +60,7 @@ h3 {
 
 #ListTimer > button {
     background-color: rgb(255, 255, 255);
-    border: solid grey;
+   /* border: solid grey; */
     margin: 5px 0 0 5px;
     width: 250px;
     height: 36px;
