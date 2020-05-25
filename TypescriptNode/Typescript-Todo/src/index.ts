@@ -95,21 +95,28 @@ a.onclick = function()
 // Making a list completed
 CheckBox.addEventListener("change", function() {
 
+        if(CheckBox.parentElement ==null)
+        {
+                alert('can not select')
+        }
+        else{
+
         if(this.checked){
-                
-                //this.parentNode.setAttribute("style");
-                this.parentNode.style.textDecoration = "line-through";
-                this.parentNode.style.color = "red";
-                
-                
+
+                CheckBox.parentElement.style.textDecoration = "line-through";
+                CheckBox.parentElement.style.color = "red";
+                        
         }
         else {
-                this.parentNode.style.textDecoration = "none";
-                this.parentNode.style.color = "black";
+                CheckBox.parentElement.style.textDecoration = "none";
+                CheckBox.parentElement.style.color = "black";
+                this.style.textDecoration = "none";
+                this.style.color = "black";
+        }
+
         }
         
 });
-
 
 }
 
